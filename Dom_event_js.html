@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Event</title>
+    <style>
+        h2{
+            padding: 20px;
+            background-color: pink;
+            display: inline-block;
+        }
+
+        h1{
+            display: inline-block;
+            margin-left: 300px;
+        }
+
+        h3{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="click" onclick="cli()" ondblclick="cli2()">click on me.</h2> <br>
+    <h1 id="curser" onmouseover="curIN()" onmouseout="curOUT()">curser on me</h1><br>
+    <h3 id="h3" onmouseup="mouseUP()" onmousedown="mouseDOWN()">this is akhil</h3>
+
+
+
+<script>
+    function cli() {
+        document.getElementById("click").innerHTML="click on me.";
+        document.getElementById("click").style.color="red";
+        document.getElementById("click").style.backgroundColor="yellow";        
+        document.getElementById("click").style.scale="1.3";        
+    }
+
+    function cli2() {
+        document.getElementById("click").innerHTML="text are also changed";
+        document.getElementById("click").style.color="blue";
+        document.getElementById("click").style.backgroundColor="orange";
+        document.getElementById("click").style.marginLeft="200px";
+    }
+
+    function curIN(){
+        document.getElementById("curser").innerHTML="text are changed";
+        document.getElementById("curser").style.backgroundColor="orange";
+    }
+
+    function curOUT(){
+        document.getElementById("curser").innerHTML="curser on me";
+        document.getElementById("curser").style.backgroundColor="white";
+        document.getElementById("curser").style.display="inline-block";
+
+    }
+
+    function mouseUP(){
+        document.getElementById("h3").style.backgroundColor="orange";
+    }
+    function mouseDOWN(){
+        document.getElementById("h3").style.backgroundColor="pink";
+    }
+
+</script>
+</body>
+</html>

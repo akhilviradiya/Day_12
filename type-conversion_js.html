@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type conversion</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    
+<script>
+    let a = "akhil" //string
+    let x = 5; //number
+    let y = "7"; //string
+    let z = 1+y; //type: String, 17
+    let w = + a; //type: number, ans:NaN
+    
+
+    document.getElementById("demo1").innerHTML =typeof  w;
+    
+    document.getElementById("demo").innerHTML = typeof z+ " " + z;
+
+</script>
+</body>
+</html>
